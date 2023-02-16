@@ -34,7 +34,7 @@
         <li><a href="https://iictmsl.vercel.app/gallery.html">GALLERY</a></li>
         <li><a href="https://iictmsl.vercel.app/faculty.html">FACULTY</a></li>
         <li><a href="https://iictmsl.vercel.app/alumni.html">ALUMNI</a></li>
-        <li><a href="https://iictmsl.vercel.app/contact.html">CONTACT US</a></li>
+        <li><a href="IIC-CP.html">CONTACT US</a></li>
       </ul>
       <div class="mode">
         <div class="moon-sun">
@@ -46,6 +46,9 @@
         </div>
     </div>
     </nav>
+    <div id="progress">
+      <div id="progress-value">&#x1F815;</div>
+    </div>
     <div class="home">
       <div class="wrapper">
         <ul class="dynamic-txts">
@@ -274,7 +277,7 @@
       <ul class="menu">
         <li><a href="IIC.html">HOME</a></li>
         <li><a href="https://iictmsl.vercel.app/about.html">ABOUT</a></li>
-        <li><a href="https://iictmsl.vercel.app/contact.html">CONTACT US</a></li>
+        <li><a href="IIC-CP.html">CONTACT US</a></li>
       </ul>
       <p>&#169 2023 Aman Shaik | All Rights Reserved</p>
     </footer>
@@ -299,6 +302,27 @@
       body.classList.toggle("dark");
     });
   </script>
+  <script>
+    let calcScrollValue = () =>{
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if(pos > 100){
+      scrollProgress.style.display = "grid";
+    }
+    else{
+      scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () =>{
+      document.documentElement.scrollTop = 0;
+    });
+ }; 
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;</script>
   <script src="IIC-script.js"></script>
 </body>
 
