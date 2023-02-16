@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>IIC TMSL</title>
+  <link rel="stylesheet" href="IIC-CP.css">
+</head>
+
+<body>
+  <div class="loader">
+    <div id="pl">
+      <div>
+        <span class="ball"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <nav>
+      <img src="image/IIC.png" alt="" class="logo">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="https://iictmsl.vercel.app/team.html">TEAM</a></li>
+        <li><a href="https://iictmsl.vercel.app/activity.html">ACTIVITY</a></li>
+        <li><a href="https://iictmsl.vercel.app/startup.html">OUR STARTUP</a></li>
+        <li><a href="https://iictmsl.vercel.app/gallery.html">GALLERY</a></li>
+        <li><a href="https://iictmsl.vercel.app/faculty.html">FACULTY</a></li>
+        <li><a href="https://iictmsl.vercel.app/alumni.html">ALUMNI</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <div class="mode">
+        <div class="moon-sun">
+            <span class="i"><ion-icon class="sun" name="sunny-outline"></ion-icon></span>
+            <span class="i"><ion-icon class="moon" name="moon-outline"></ion-icon></span>
+        </div>
+        <div class="toggle-switch">
+            <span class="switch"></span>
+        </div>
+    </div>
+    </nav>
+
+    <section class="contact">
+      <div class="content">
+          <h2>GET IN TOUCH WITH US</h2>
+          <p>Passionated Youth Are Always Welcome to IIC TMSL</p>
+      </div>
+      <div class="container">
+          <div class="contactInfo">
+              <div class="box">
+                  <div class="icon"><ion-icon name="pin"></ion-icon></div>
+                  <div class="text">
+                      <h3>Adress</h3>
+                      <p>TECHNO INDIA : EM-4/1, Sector-V,
+                        Salt Lake,<br>Kolkata-700091,<br>West Bengal</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><ion-icon name="call"></ion-icon></div>
+                  <div class="text">
+                      <h3>Phone</h3>
+                      <p>+91 85150 05676</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><ion-icon name="mail"></ion-icon></div>
+                  <div class="text">
+                      <h3>Email</h3>
+                      <p>iic.tmsl@gmail.com</p>
+                  </div>
+              </div>
+              <h2 class="txt">Connect with us</h2>
+              <ul class="sci">
+                  <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              </ul>
+          </div>
+
+          <div class="contactForm">
+              <form action="">
+                  <h2>Send Message</h2>
+                  <div class="inputBox">
+                      <input type="text" name="" required="required">
+                      <span>Full Name</span>
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" name="" required="required">
+                      <span>Email</span>
+                  </div>
+                  <div class="inputBox">
+                      <textarea required="required"></textarea>
+                      <span>Type your Message...</span>
+                  </div>
+                  <div class="inputBox">
+                      <input type="submit" value="Send">
+                  </div>
+              </form>
+          </div>
+      </div>
+  </section>
+</div>
+    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%; opacity:0.4;" width="1557"
+      height="923"></canvas>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="IIC-script.js"></script>
+    <script>
+      const body = document.querySelector("body"),
+        modeSwtich = body.querySelector(".toggle-switch");
+
+      modeSwtich.addEventListener("click", () => {
+        body.classList.toggle("dark");
+      });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>
