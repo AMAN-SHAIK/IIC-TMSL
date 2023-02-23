@@ -6,7 +6,9 @@
 	box-sizing: border-box;
 	font-family: 'poppins', sans-serif;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 :root {
 	--navtxt: #fff;
 	--oceanblu: #00D8FF;
@@ -392,29 +394,29 @@ nav ul li a:hover:after {
     position: absolute;
     transition: var(--tran-03);
 }
-.mode .moon-sun .sun{
+.mode .moon-sun .moon{
     color: var(--navtxt);
     font-size: 1.2em;
     position: absolute;
     top: 25%;
 }
-.mode .moon-sun .moon{
+.mode .moon-sun .sun{
     font-size: 1.2em;
     color: var(--navtxt);
     position: absolute;
     left: 10%;
     top: 20%;
 }
-.mode .moon-sun .sun{
+.mode .moon-sun .moon{
     opacity: 0;
 }
-body.dark .mode .sun{
+body.dark .mode .moon{
     opacity: 1;
     position: absolute;
     left: 10%;
     top: 15%;
 }
-body.dark .mode .moon{
+body.dark .mode .sun{
     opacity: 0;
 }
 .mode .toggle-switch{
@@ -428,7 +430,7 @@ body.dark .mode .moon{
     width: 30px;
     border-radius: 12px;
     cursor: pointer;
-    background: var(--navtxt);
+    background: #00bcd4;
 }
 .toggle-switch .switch{
     position: relative;
@@ -453,6 +455,30 @@ body.dark .toggle-switch .switch::before{
 }
 body{
     background-color: var(--bg);
+}
+#progress{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	height: 70px;
+	width: 70px;
+	display: none;
+	place-items: center;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #00D8FF;
+	cursor: pointer;
+	z-index: 10;
+}
+#progress-value{
+	display: block;
+	height: calc(100% - 15px);
+	width: calc(100% - 15px);
+	background-color: black;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: 35px;
+	color: #fff;
 }
 
 .wrapper {
@@ -483,7 +509,7 @@ body{
 
 @keyframes slide {
 	100% {
-		top: -110px;
+		top: -120px;
 	}
 }
 
