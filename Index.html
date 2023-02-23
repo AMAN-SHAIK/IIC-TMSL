@@ -320,6 +320,7 @@
     scrollProgress.addEventListener("click", () =>{
       document.documentElement.scrollTop = 0;
     });
+    scrollProgress.style.background = `conic-gradient(#00D8FF ${scrollValue}%, black ${scrollValue}%)`;
  }; 
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;</script>
