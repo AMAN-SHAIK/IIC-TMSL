@@ -1107,6 +1107,7 @@ footer .wave#wave3{
 		font-size: 10px;
 		right: 80%;
 		position: relative;
+		visibility: hidden;
 	}
 	.il{
 		position: relative;
@@ -1143,12 +1144,21 @@ footer .wave#wave3{
 		font-size: 1em;
 	}
 	.dynamic-txts li{
-		font-size: 17px;
-		left: 1%;
+		font-size: 1em;
+		margin-bottom: 11px;
+		left: 3%;
+		top: 2%;
 	}
 	.wrapper .dynamic-txts{
-		line-height: 60px;
+		line-height: 33px;
+		height: 45px;
+		width: 100%;
 	}
+	@keyframes slide {
+	100% {
+		top: -70px;
+	}
+}
 	.text-box{
 		left: 15%;
 		top: 20%;
@@ -1156,17 +1166,17 @@ footer .wave#wave3{
 		flex-direction: column;
 	}
 	.text-box h1{
-		font-size: 150px;
+		font-size: 130px;
 		left: 30%;
 	}
 	.text-box span {
-		font-size: 17px;
+		font-size: 13px;
 	}
 	.illustration{
 		font-size: 10px;
 		right: 10%;
 		position: relative;
-		top: 50%;
+		visibility: hidden;
 	}
 	.il{
 		position: relative;
@@ -1175,4 +1185,106 @@ footer .wave#wave3{
 	.intro{
 		margin-top: 1%;
 	}
+	.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 60%;
+	height: 40vh;
+}
+.info {
+	height: 200px;
+	width: 400px;
+	padding: 20px;
+	margin-left: 0px;
+}
+	.img1 {
+	height: 100px;
+	width: 100px;
+	border-radius: 6px;
+	margin-left: -100px;
+	margin-top: 250px;
+}
+	.intro {
+	flex-direction: column;
+}
+#p1{
+	margin-left: -100px;
+	margin-bottom: 100px;
+}
+#p2{
+	margin-left: 0px;
+}
+	#p3{
+	margin-left: -100px;
+}
+	#p4 p{
+	font-size: 1em;
+	margin-top: 50px;
+}
+	#p5{
+		margin-top: 80%;
+	}
+.img1 img {
+	height: 150px;
+	width: 200px;
+	transform: scale(1.7);
+}
+.h4{
+	margin-left: 20%;
+}
+.content h4 {
+	font-size: 1.5em;
+	margin-bottom: 7px;
+	margin-left: 100px;
+	color: var(--navtxt);
+}
+.content ol{
+	width:300px;
+	margin-left: 50px;
+}
+.content h4 {
+	margin-left: 10%;
+}
+.content li{
+	font-size: 9px;
+	color: var(--navtxt);
+}
+.info p {
+	font-size: 15px;
+	color: var(--navtxt);
+}
+	.info a{
+	height: 30px;
+	width: 50px;
+	position: relative;
+	text-decoration: none;
+	color: var(--navtxt);
+	margin-left: 30%;
+	border: 2px solid #00D8FF;
+	padding: 10px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	-webkit-box-reflect: below 0px linear-gradient(transparent,#000200);
+	transition: 0.5s;
+	z-index: 1;
+	transition-delay: 1.5s;
+}
+	.content2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin-top: 120%;
+}
+	.content2 img{
+	height: 200px;
+	width: 800px;
+	transform: scale(0.9);
+}
+	footer{
+	bottom: -460px;
+}
+	
 }
