@@ -44,6 +44,7 @@
             <span class="switch"></span>
         </div>
     </div>
+    <div class="bx bx-menu" id="menu-icon"><ion-icon name="menu-outline" id="mnico"></ion-icon></div>
     </nav>
 
     <section class="contact">
@@ -118,6 +119,14 @@
       modeSwtich.addEventListener("click", () => {
         body.classList.toggle("dark");
       });
+    </script>
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let ul = document.querySelector('ul');
+      menu.onclick = () =>{
+        menu.classList.toggle('bx-x');
+        ul.classList.toggle('open');
+      }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

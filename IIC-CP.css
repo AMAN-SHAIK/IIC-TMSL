@@ -29,7 +29,7 @@ body.dark{
     --tran-03:all 0.3s ease;
     --tran-04:all 0.4s ease;
     --tran-05:all 0.5s ease;
-	--primary-color:#695cfe;
+	--:#695cfe;
 	--toggle-color:transparent;
     --text-color:#18191a;
 }
@@ -347,7 +347,7 @@ nav ul {
 nav ul li {
 	display: inline-block;
 	list-style: none;
-	margin: 10px 25px;
+	margin: 10px 20px;
 }
 
 nav ul li a {
@@ -450,6 +450,13 @@ body.dark .mode .sun{
 }
 body.dark .toggle-switch .switch::before{
     left: 60%;
+}
+#menu-icon{
+	font-size: 45px;
+	color: var(--navtxt);
+	cursor: pointer;
+	z-index: 100000;
+	display: none;
 }
 body{
     background-color: var(--bg);
@@ -617,6 +624,108 @@ body{
     font-size: 1.1em;
     font-weight: 500;
 }
+@media (max-width: 1280px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo,
+    .container .contactForm{
+        width: 100%;
+    }
+	.logo{
+		width: 100px;
+		position: relative;
+		padding-left: 10px;
+	}
+	.mode{
+		right: 5%;
+	}
+	nav ul li{
+		margin: 10px 10px;
+	}
+	nav ul li a {
+		font-size: 1em
+	}
+	nav ul{
+		padding-left: 20px;
+	}
+}
+@media (max-width: 1090px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo,
+    .container .contactForm{
+        width: 100%;
+    }
+	.logo{
+		width: 100px;
+		position: relative;
+		padding-left: 10px;
+	}
+	.mode{
+		position: absolute;
+		right: 15%;
+		top:20%;
+	}
+	nav ul li{
+		margin: 10px 10px;
+	}
+	nav ul li a {
+		font-size: 1em
+	}
+	nav ul{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 270px;
+		height: 80vh;
+		background: var(--primary-color);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-content: center;
+		border-radius: 15px;
+		transition: all .50s ease;
+	}
+	nav ul.open{
+		right: 2%;
+	}
+	nav ul a{
+		display: block;
+		margin: 10px 15px;
+		padding: 0 0 0 35px;
+	}
+	nav ul a:hover{
+		color: var(--oceanblu)
+	}
+	#menu-icon{
+		display: block;
+		position: absolute;
+		right: 3%;
+	}
+	#menu-icon.bx-x{
+		color: red;
+		transform: rotate(90deg) scale(1.3) translateY(7px);
+		transition: 0.5s ease-in;
+	}
+	.contact .content h2{
+		margin-top: 10%;
+			font-size: 2.5em;
+			margin-bottom: 5%;
+	}
+		.contact .content p{
+			font-size: 1.2em;
+		}
+}
 @media (max-width: 991px)
 {
     .contact{
@@ -629,4 +738,18 @@ body{
     .container .contactForm{
         width: 100%;
     }
+	.logo{
+		width: 100px;
+		position: relative;
+		padding-left: 10px;
+		top:0%;
+	}
+	.contact .content h2{
+    margin-top: 10%;
+		font-size: 1.7em;
+		margin-bottom: 10%;
+}
+	.contact .content p{
+		font-size: 1em;
+	}
 }
